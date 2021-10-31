@@ -1,6 +1,6 @@
 const ItemListContainer = ({msj}) => {
     return (
-        <span>El mensaje es:{msj}</span>
+        <span> El mensaje es:{msj}</span>
     )
 }
 
