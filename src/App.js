@@ -1,6 +1,7 @@
 import Header from "./Header"
 import ItemListContainer from "./Components/ItemListContainer"
-import Counter from "./Components/Contador";
+
+
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <>
       <Header/>
       <ItemListContainer msj="Mensaje ItemListContainer"></ItemListContainer>
-      <Counter initialCount={0}/>
+      
     </>
     
   );
