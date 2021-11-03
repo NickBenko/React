@@ -55,3 +55,14 @@ HOOKS: Son funciones que se ejecutan en un componente y le dan una nueva funcion
         - useState()
         - useReducer()
         - useRef()
+
+PROMESAS
+Es un objeto que representa una operacion que dura en el tiempo
+
+const resultado = operaciones()
+resultado.then(()=>{})
+resultado.catch(()=>{})
+
+operaciones()
+ .then(()=>{})
+ .catch(()=>{})
