@@ -1,14 +1,14 @@
-/*import Item from "./Item"*/
+import Item from "./Item"
 
 const ItemList = (items) => {
 
     return (
-        <div>
-         <p>Entraste a ItemList</p>
-        </div>
-       )
-    
-
+     <div>
+               {items.map((item) =>(
+                    <Item e={item}/>)
+               )}
+               </div>
+    )
 }
 
 

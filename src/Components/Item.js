@@ -1,7 +1,7 @@
 //import useEffect from 'react'
 //import useState from 'react'
 
-const Item = (item) => {
+const Item = (e) =>{
 
     
 
@@ -13,8 +13,8 @@ const Item = (item) => {
 
     return (
         <div>
-            <p>{item.title}</p>
-            <p>{item.price}</p>
+            <p>{e.title}</p>
+            <p>{e.price}</p>
         </div>
     )
 }
