@@ -4,29 +4,38 @@ import {useEffect} from 'react';
 import {useState} from 'react';
 import productosJSON from "./productosJSON.json";
 
+
+
+
+
 const ItemListContainer = () => {
+
+
 
   const [prod, setProd] = useState([])
   
-  useEffect(() => {
-    promesa
+ useEffect(() => {
+    setTimeout(() => {  
+      promesa
     .then((data_json) => {
-      setTimeout(() => {
         setProd(data_json)
-      },2000)
+     })
+     .catch((err) => {
+      console.error(err)
     })
-  .catch((err) => {
-    console.error(err)
-  })
+   },2000)
+ },[])
 
-  },[])
+ const promesa = new Promise((resolve, reject) => {
+  resolve(productosJSON);
+  reject(console.error());
+});
 
-  const promesa = new Promise((resolve, reject) => {
-    resolve(productosJSON);
-    reject(console.error());
-  });
-
+ 
   return (<ItemList items={prod} />)
+
+
+
 
 }
 
