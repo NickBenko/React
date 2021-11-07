@@ -19,8 +19,7 @@ const ItemCount = ({initialCount,stockProd}) => {
  }
 
    return (
-        <Card className="row">
-          <div className="col-3">
+          <div>
                      <label className="form-label ">Cantidad </label>
                      <Card.Body>{count}</Card.Body> 
                      <button className="col-3" onClick={Resta(initialCount,count,setCount)}>-</button>
@@ -29,7 +28,7 @@ const ItemCount = ({initialCount,stockProd}) => {
                     <button type="button" className="btn btn-lg btn-primary col-9 ">Agregar a Carrito</button>
                     <h6><i aria-hidden="true"></i>Stock disponible {stockProd} unidades</h6>
                     </div>
-        </Card>
+      
     
     )
 }

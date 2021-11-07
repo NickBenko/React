@@ -1,16 +1,20 @@
 //import useEffect from 'react'
 //import useState from 'react'
+import ItemCount from "./ItemCount";
 
-const Item = ({id,title,description,price,img}) =>{
+
+const Item = ({id,title,description,price,img,stock}) =>{
 
     return (
-        <div>
+        <>
             <p>{id}</p>
             <p>{title}</p>
             <p>{description}</p>
             <p>{price}</p>
             <p>{img}</p>
-        </div>
+
+            <ItemCount initialCount={1} stockProd={stock} />
+      </>
     )
 }
 

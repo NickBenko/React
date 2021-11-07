@@ -1,11 +1,10 @@
 import Item from "./Item"
+import Card from 'react-bootstrap/Card';
 
 const ItemList = ({items}) => {
 
-console.log(items)
-
     return (
-     <div className="container">
+        <Card>
                {
                items.map((item) =>
                     <Item key={item.id}
@@ -14,9 +13,10 @@ console.log(items)
                     price={item.price}
                     description={item.description}
                     img={item.img}
+                    stock={item.stock}
                     />
                     )}
-    </div>
+   </Card>
     )
 }
 
