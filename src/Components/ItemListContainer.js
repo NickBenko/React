@@ -31,13 +31,17 @@ const ItemListContainer = () => {
   reject(console.error());
 });
 
- 
+ if (prod.length == 0){
+   return <p>Cargando...</p>
+ }
+ else{
   return (
-    <>
   <ItemList items={prod} />
- 
-  </>)
+ )
 
+
+ }
+ 
 
 
 

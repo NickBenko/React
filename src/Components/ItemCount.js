@@ -28,8 +28,7 @@ const ItemCount = ({initialCount,stockProd}) => {
                     <button type="button" className="btn btn-lg btn-primary col-9 ">Agregar a Carrito</button>
                     <h6><i aria-hidden="true"></i>Stock disponible {stockProd} unidades</h6>
                     </div>
-      
-    
+
     )
 }
 
